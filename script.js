@@ -3,7 +3,7 @@
 
   const projects = {
     dabddob: {
-      title: 'Dabddob', category: 'Consumer app · iOS & Android',
+      title: 'Dabdoob', category: 'Consumer app · iOS & Android',
       description: 'A consumer mobile app with more than one million downloads. Built around a seamless content browsing experience with real-time updates and intuitive navigation.',
       sections: [
         ['Engineering focus', 'Cross-device performance optimization, real-time content updates, and a consistent browsing and navigation experience across iOS and Android.'],
