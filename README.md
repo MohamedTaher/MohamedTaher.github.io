@@ -29,6 +29,7 @@ Then visit http://localhost:8000. The email-copy button uses the Clipboard API, 
 - `script.js`: project dialog content, filters, and email copying.
 - `assets/Mohamed-Taher-Resume.pdf`: downloadable résumé.
 - `assets/social-preview.png`: social sharing image.
+- `assets/cairo-university-logo.png`: unchanged official university web logo; the education badge displays its emblem using a CSS crop. [Original source](http://cu.edu.eg/templates/ts_barrister/images/presets/preset1/logo.png).
 
 Project summaries appear in both the page and the project dialog data. Update both when changing a project. iScore is marked **in development** based on the supplied résumé. Career metrics, titles, and employment dates reflect that résumé.
 
