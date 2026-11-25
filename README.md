@@ -35,15 +35,19 @@ Project summaries appear in both the page and the project dialog data. Update bo
 
 ## GitHub Pages
 
-This site uses the `main` branch and repository root as the publishing source. The `.nojekyll` file allows GitHub Pages to serve the static files directly. No custom domain or external service is required.
+This site is published by the **Publish portfolio** GitHub Actions workflow in `.github/workflows/deploy-pages.yml`. Every push to `main` deploys the static website. The workflow can also be started manually from the repository’s **Actions** tab. No packages, build step, custom domain, or external hosting service are required.
+
+The workflow uploads only the website files and `assets/` directory. Repository documentation and workflow configuration are excluded from the published website.
 
 To publish a copy:
 
 1. Create a public GitHub repository named `<your-username>.github.io`.
 2. Upload this folder’s contents to its `main` branch.
-3. In **Settings → Pages → Build and deployment**, choose **Deploy from a branch**, then **main** and **/ (root)**, and save.
+3. In **Settings → Pages → Build and deployment**, choose **GitHub Actions** as the source.
 4. Update the profile link, canonical URL, Open Graph URLs, contact details, and structured data in `index.html` for the new owner.
 
-See [GitHub’s publishing source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+5. Open **Actions → Publish portfolio → Run workflow**, select `main`, and start the first deployment.
+
+See [GitHub’s custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
 There are no analytics, tracking scripts, remote fonts, or runtime dependencies.
